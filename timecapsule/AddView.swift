@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AddView.swift
 //  timecapsule
 //
 //  Created by James Lee on 2020-11-21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AddView: View {
     init() {
         UINavigationBar.appearance().isUserInteractionEnabled = false
         UINavigationBar.appearance().backgroundColor = .clear
@@ -56,8 +56,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AddView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AddView()
     }
 }
