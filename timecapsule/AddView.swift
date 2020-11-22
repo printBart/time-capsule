@@ -8,15 +8,6 @@
 import SwiftUI
 
 struct AddView: View {
-    init() {
-        UINavigationBar.appearance().isUserInteractionEnabled = false
-        UINavigationBar.appearance().backgroundColor = .clear
-        UINavigationBar.appearance().barTintColor = .clear
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().tintColor = .clear
-    }
-
     var body: some View {
         NavigationView{
             ZStack{
@@ -29,13 +20,12 @@ struct AddView: View {
                     HStack{
                         Spacer()
                         NavigationLink(
-                            destination: AddText(),
-                            label: {
+                            destination: AddText()){
                                 VStack(spacing: 10){
                                     Image(systemName: "doc.plaintext").font(.system(size: 35)).foregroundColor(.white)
                                     Text("Text").foregroundColor(.white).fontWeight(.bold)
                                 }
-                            })
+                            }.isDetailLink(false)
                         Spacer()
                         VStack(spacing: 10){
                             Image(systemName: "photo.on.rectangle").font(.system(size: 35)).foregroundColor(.white)
@@ -50,12 +40,13 @@ struct AddView: View {
                     }
                     //Spacer()
                     Spacer()
-                    NavigationLink(
-                        destination: CapsuleListView(),
-                        label: {
-                            Text("My Capsules").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                .padding().background(Color(red: 18/255, green: 33/255, blue: 60/255, opacity: 0.9)).foregroundColor(.white).cornerRadius(25)
-                        }).buttonStyle(PlainButtonStyle())
+                    HStack{
+                        NavigationLink(
+                            destination: CapsuleListView()){
+                                Text("My Capsules").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .padding().background(Color(red: 18/255, green: 33/255, blue: 60/255, opacity: 0.9)).foregroundColor(.white).cornerRadius(25)
+                            }.buttonStyle(PlainButtonStyle())
+                    }
                     Spacer()
                 }
             }

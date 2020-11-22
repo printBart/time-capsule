@@ -25,7 +25,7 @@ struct AddText: View {
                     Spacer()
                     Text("Add Text").foregroundColor(.white).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Spacer()
-                    Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
+                    NavigationLink(destination: CapsuleListView()) {
                         Text("Done").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     }
                 }.padding()

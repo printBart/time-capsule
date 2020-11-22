@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1AEE7B3C2569B3FA0066DE0D /* timecapsuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B3B2569B3FA0066DE0D /* timecapsuleApp.swift */; };
-		1AEE7B3E2569B3FA0066DE0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B3D2569B3FA0066DE0D /* ContentView.swift */; };
 		1AEE7B402569B3FD0066DE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE7B3F2569B3FD0066DE0D /* Assets.xcassets */; };
 		1AEE7B432569B3FD0066DE0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE7B422569B3FD0066DE0D /* Preview Assets.xcassets */; };
 		1AEE7B4E2569B3FD0066DE0D /* timecapsuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B4D2569B3FD0066DE0D /* timecapsuleTests.swift */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		1AEE7B382569B3FA0066DE0D /* timecapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timecapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEE7B3B2569B3FA0066DE0D /* timecapsuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timecapsuleApp.swift; sourceTree = "<group>"; };
-		1AEE7B3D2569B3FA0066DE0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AEE7B3F2569B3FD0066DE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AEE7B422569B3FD0066DE0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1AEE7B442569B3FD0066DE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				1AEE7B3B2569B3FA0066DE0D /* timecapsuleApp.swift */,
-				1AEE7B3D2569B3FA0066DE0D /* ContentView.swift */,
 				1AEE7B692569B7A40066DE0D /* space-background.png */,
 				1AEE7B3F2569B3FD0066DE0D /* Assets.xcassets */,
 				1AEE7B442569B3FD0066DE0D /* Info.plist */,
@@ -279,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AEE7B742569BF6E0066DE0D /* AddView.swift in Sources */,
-				1AEE7B3E2569B3FA0066DE0D /* ContentView.swift in Sources */,
 				1AEE7B6F2569BDD20066DE0D /* AddText.swift in Sources */,
 				1AEE7B792569DCBA0066DE0D /* MainView.swift in Sources */,
 				1AEE7B7E2569EA2A0066DE0D /* CapsuleListView.swift in Sources */,

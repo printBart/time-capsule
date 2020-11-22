@@ -14,6 +14,7 @@ struct CapsuleListView: View {
         UITableView.appearance().tableFooterView = UIView()
     }
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         ZStack{
             Image("space-clean-background").resizable()
@@ -22,7 +23,7 @@ struct CapsuleListView: View {
             VStack{
                 HStack{
                     Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
-                        Text("Back")
+                        Image(systemName: "house.fill").font(.system(size: 25))
                     }
                     Spacer()
                     Spacer()
@@ -38,7 +39,7 @@ struct CapsuleListView: View {
                         capsule in
                         NavigationLink(destination: CapsuleView()){
                             HStack{
-                                Image(systemName: "lock.fill").foregroundColor(.white).font(.system(size: 25))
+                                Image(systemName: "lock.fill").foregroundColor(.gray).font(.system(size: 25))
                                 Image(systemName: "doc.circle.fill").foregroundColor(.white).font(.system(size: 75)).padding([.leading,.trailing])
                                 VStack(alignment: .leading){
                                     Text("This is the title").foregroundColor(.white).fontWeight(.bold).font(.system(size: 20))
