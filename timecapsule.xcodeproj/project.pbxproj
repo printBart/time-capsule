@@ -16,6 +16,9 @@
 		1AEE7B6A2569B7A40066DE0D /* space-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE7B692569B7A40066DE0D /* space-background.png */; };
 		1AEE7B6F2569BDD20066DE0D /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B6E2569BDD20066DE0D /* AddText.swift */; };
 		1AEE7B742569BF6E0066DE0D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B732569BF6E0066DE0D /* AddView.swift */; };
+		1AEE7B792569DCBA0066DE0D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B782569DCBA0066DE0D /* MainView.swift */; };
+		1AEE7B7E2569EA2A0066DE0D /* CapsuleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B7D2569EA2A0066DE0D /* CapsuleListView.swift */; };
+		1AEE7B83256A004D0066DE0D /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B82256A004D0066DE0D /* CapsuleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		1AEE7B692569B7A40066DE0D /* space-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "space-background.png"; path = "../../../../Desktop/space-background.png"; sourceTree = "<group>"; };
 		1AEE7B6E2569BDD20066DE0D /* AddText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
 		1AEE7B732569BF6E0066DE0D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		1AEE7B782569DCBA0066DE0D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1AEE7B7D2569EA2A0066DE0D /* CapsuleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleListView.swift; sourceTree = "<group>"; };
+		1AEE7B82256A004D0066DE0D /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				1AEE7B412569B3FD0066DE0D /* Preview Content */,
 				1AEE7B6E2569BDD20066DE0D /* AddText.swift */,
 				1AEE7B732569BF6E0066DE0D /* AddView.swift */,
+				1AEE7B782569DCBA0066DE0D /* MainView.swift */,
+				1AEE7B7D2569EA2A0066DE0D /* CapsuleListView.swift */,
+				1AEE7B82256A004D0066DE0D /* CapsuleView.swift */,
 			);
 			path = timecapsule;
 			sourceTree = "<group>";
@@ -272,6 +281,9 @@
 				1AEE7B742569BF6E0066DE0D /* AddView.swift in Sources */,
 				1AEE7B3E2569B3FA0066DE0D /* ContentView.swift in Sources */,
 				1AEE7B6F2569BDD20066DE0D /* AddText.swift in Sources */,
+				1AEE7B792569DCBA0066DE0D /* MainView.swift in Sources */,
+				1AEE7B7E2569EA2A0066DE0D /* CapsuleListView.swift in Sources */,
+				1AEE7B83256A004D0066DE0D /* CapsuleView.swift in Sources */,
 				1AEE7B3C2569B3FA0066DE0D /* timecapsuleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
