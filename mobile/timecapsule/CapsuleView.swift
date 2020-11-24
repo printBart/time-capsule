@@ -13,6 +13,7 @@ struct CapsuleView: View {
     let columns = [
         GridItem(.adaptive(minimum: UIScreen.main.bounds.width/3))
     ]
+    @State var displayAddTypeSheet = false
     var body: some View {
         ZStack{
             Image("space-clean-background").resizable()
@@ -24,13 +25,13 @@ struct CapsuleView: View {
                         Image(systemName: "chevron.left").font(.system(size: 25))
                     }
                     Spacer()
-                    Spacer()
-                    Spacer()
                     Text("Title Capsule").foregroundColor(.white).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
+                    Button(action: {self.displayAddTypeSheet.toggle()}) {
+                        Image(systemName: "tray.and.arrow.down.fill").font(.system(size: 25))
+                    }.sheet(isPresented: $displayAddTypeSheet){
+                        AddTypeSheetView()
+                    }
                 }.padding()
                 ScrollView(showsIndicators: false){
                     LazyVGrid(columns: columns, spacing: 20){

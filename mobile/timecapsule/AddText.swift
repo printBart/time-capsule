@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct AddText: View {
-    init() {
-        UITextView.appearance().backgroundColor = .clear
-    }
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var fullText: String = ""
+    @Binding var textSave:Bool
+    init(textSave: Binding<Bool>) {
+        UITextView.appearance().backgroundColor = .clear
+        self._textSave = textSave
+    }
     var body: some View {
         ZStack{
         Color(red: 18/255, green: 33/255, blue: 60/255)
@@ -25,7 +27,10 @@ struct AddText: View {
                     Spacer()
                     Text("Add Text").foregroundColor(.white).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Spacer()
-                    NavigationLink(destination: CapsuleListView()) {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                        self.textSave = true
+                    }) {
                         Text("Done").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     }
                 }.padding()
@@ -44,7 +49,8 @@ struct AddText: View {
 }
 
 struct AddText_Previews: PreviewProvider {
+    @State static var value = false
     static var previews: some View {
-        AddText()
+        AddText(textSave: $value)
     }
 }

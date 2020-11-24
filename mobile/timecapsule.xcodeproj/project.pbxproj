@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A239336256C86C60033FF08 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A239335256C86C60033FF08 /* ImagePicker.swift */; };
+		1A26D41F256AB79200955D36 /* AddTypeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A26D41E256AB79200955D36 /* AddTypeSheetView.swift */; };
 		1AEE7B3C2569B3FA0066DE0D /* timecapsuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B3B2569B3FA0066DE0D /* timecapsuleApp.swift */; };
 		1AEE7B402569B3FD0066DE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE7B3F2569B3FD0066DE0D /* Assets.xcassets */; };
 		1AEE7B432569B3FD0066DE0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE7B422569B3FD0066DE0D /* Preview Assets.xcassets */; };
 		1AEE7B4E2569B3FD0066DE0D /* timecapsuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B4D2569B3FD0066DE0D /* timecapsuleTests.swift */; };
 		1AEE7B592569B3FD0066DE0D /* timecapsuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B582569B3FD0066DE0D /* timecapsuleUITests.swift */; };
-		1AEE7B6A2569B7A40066DE0D /* space-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE7B692569B7A40066DE0D /* space-background.png */; };
 		1AEE7B6F2569BDD20066DE0D /* AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B6E2569BDD20066DE0D /* AddText.swift */; };
 		1AEE7B742569BF6E0066DE0D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B732569BF6E0066DE0D /* AddView.swift */; };
 		1AEE7B792569DCBA0066DE0D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B782569DCBA0066DE0D /* MainView.swift */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A239335256C86C60033FF08 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1A26D41E256AB79200955D36 /* AddTypeSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTypeSheetView.swift; sourceTree = "<group>"; };
 		1AEE7B382569B3FA0066DE0D /* timecapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timecapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEE7B3B2569B3FA0066DE0D /* timecapsuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timecapsuleApp.swift; sourceTree = "<group>"; };
 		1AEE7B3F2569B3FD0066DE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		1AEE7B542569B3FD0066DE0D /* timecapsuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timecapsuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEE7B582569B3FD0066DE0D /* timecapsuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timecapsuleUITests.swift; sourceTree = "<group>"; };
 		1AEE7B5A2569B3FD0066DE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AEE7B692569B7A40066DE0D /* space-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "space-background.png"; path = "../../../../Desktop/space-background.png"; sourceTree = "<group>"; };
 		1AEE7B6E2569BDD20066DE0D /* AddText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddText.swift; sourceTree = "<group>"; };
 		1AEE7B732569BF6E0066DE0D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		1AEE7B782569DCBA0066DE0D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -106,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				1AEE7B3B2569B3FA0066DE0D /* timecapsuleApp.swift */,
-				1AEE7B692569B7A40066DE0D /* space-background.png */,
 				1AEE7B3F2569B3FD0066DE0D /* Assets.xcassets */,
 				1AEE7B442569B3FD0066DE0D /* Info.plist */,
 				1AEE7B412569B3FD0066DE0D /* Preview Content */,
@@ -115,6 +116,8 @@
 				1AEE7B782569DCBA0066DE0D /* MainView.swift */,
 				1AEE7B7D2569EA2A0066DE0D /* CapsuleListView.swift */,
 				1AEE7B82256A004D0066DE0D /* CapsuleView.swift */,
+				1A26D41E256AB79200955D36 /* AddTypeSheetView.swift */,
+				1A239335256C86C60033FF08 /* ImagePicker.swift */,
 			);
 			path = timecapsule;
 			sourceTree = "<group>";
@@ -250,7 +253,6 @@
 			files = (
 				1AEE7B432569B3FD0066DE0D /* Preview Assets.xcassets in Resources */,
 				1AEE7B402569B3FD0066DE0D /* Assets.xcassets in Resources */,
-				1AEE7B6A2569B7A40066DE0D /* space-background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +281,8 @@
 				1AEE7B6F2569BDD20066DE0D /* AddText.swift in Sources */,
 				1AEE7B792569DCBA0066DE0D /* MainView.swift in Sources */,
 				1AEE7B7E2569EA2A0066DE0D /* CapsuleListView.swift in Sources */,
+				1A26D41F256AB79200955D36 /* AddTypeSheetView.swift in Sources */,
+				1A239336256C86C60033FF08 /* ImagePicker.swift in Sources */,
 				1AEE7B83256A004D0066DE0D /* CapsuleView.swift in Sources */,
 				1AEE7B3C2569B3FA0066DE0D /* timecapsuleApp.swift in Sources */,
 			);

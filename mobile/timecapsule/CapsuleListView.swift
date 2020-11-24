@@ -8,11 +8,6 @@
 import SwiftUI
 
 struct CapsuleListView: View {
-    init(){
-        UITableView.appearance().backgroundColor = .clear
-        UITableViewCell.appearance().backgroundColor = .clear
-        UITableView.appearance().tableFooterView = UIView()
-    }
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     var body: some View {
@@ -26,13 +21,11 @@ struct CapsuleListView: View {
                         Image(systemName: "house.fill").font(.system(size: 25))
                     }
                     Spacer()
-                    Spacer()
-                    Spacer()
                     Text("My Capsules").foregroundColor(.white).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
+                    Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
+                        Image(systemName: "plus.square").font(.system(size: 28))
+                    }
                 }.padding()
                 ScrollView(showsIndicators: false){
                     ForEach((1...10), id: \.self){
@@ -53,7 +46,7 @@ struct CapsuleListView: View {
                 }.padding()
                 Spacer()
             }
-        }.navigationBarTitle("").navigationBarHidden(true)
+        }.navigationBarTitle("").navigationBarHidden(true).edgesIgnoringSafeArea(.bottom)
     }
 }
 
