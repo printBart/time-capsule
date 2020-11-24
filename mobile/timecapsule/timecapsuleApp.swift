@@ -11,7 +11,7 @@ import SwiftUI
 struct timecapsuleApp: App {
     var body: some Scene {
         WindowGroup {
-            AddView()
+            MainView().environmentObject(GlobalData())
         }
     }
 }

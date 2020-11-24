@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var globalData: GlobalData
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            if(self.globalData.isAuthenticated){
+                AddView().navigationBarTitle("")
+                    .navigationBarHidden(true)
+            }
+            else{
+                AuthView().navigationBarTitle("")
+                    .navigationBarHidden(true)
+            }
+        }
     }
 }
 
