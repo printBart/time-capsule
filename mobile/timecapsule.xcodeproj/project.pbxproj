@@ -10,6 +10,9 @@
 		1A239336256C86C60033FF08 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A239335256C86C60033FF08 /* ImagePicker.swift */; };
 		1A23933B256CA9150033FF08 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A23933A256CA9150033FF08 /* LoginView.swift */; };
 		1A26D41F256AB79200955D36 /* AddTypeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A26D41E256AB79200955D36 /* AddTypeSheetView.swift */; };
+		1A75816E256D7D43001EA9E3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75816D256D7D43001EA9E3 /* SettingsView.swift */; };
+		1A758173256DD127001EA9E3 /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A758172256DD127001EA9E3 /* RegisterEmailView.swift */; };
+		1A758178256DD39C001EA9E3 /* RegisterPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A758177256DD39C001EA9E3 /* RegisterPasswordView.swift */; };
 		1A7F0D9F256CC28900A405A0 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0D9E256CC28900A405A0 /* AuthView.swift */; };
 		1A7F0DA4256CDA3A00A405A0 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F0DA3256CDA3A00A405A0 /* GlobalData.swift */; };
 		1AEE7B3C2569B3FA0066DE0D /* timecapsuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE7B3B2569B3FA0066DE0D /* timecapsuleApp.swift */; };
@@ -45,6 +48,9 @@
 		1A239335256C86C60033FF08 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1A23933A256CA9150033FF08 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1A26D41E256AB79200955D36 /* AddTypeSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTypeSheetView.swift; sourceTree = "<group>"; };
+		1A75816D256D7D43001EA9E3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1A758172256DD127001EA9E3 /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
+		1A758177256DD39C001EA9E3 /* RegisterPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPasswordView.swift; sourceTree = "<group>"; };
 		1A7F0D9E256CC28900A405A0 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		1A7F0DA3256CDA3A00A405A0 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		1AEE7B382569B3FA0066DE0D /* timecapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timecapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +133,9 @@
 				1A23933A256CA9150033FF08 /* LoginView.swift */,
 				1A7F0D9E256CC28900A405A0 /* AuthView.swift */,
 				1A7F0DA3256CDA3A00A405A0 /* GlobalData.swift */,
+				1A75816D256D7D43001EA9E3 /* SettingsView.swift */,
+				1A758172256DD127001EA9E3 /* RegisterEmailView.swift */,
+				1A758177256DD39C001EA9E3 /* RegisterPasswordView.swift */,
 			);
 			path = timecapsule;
 			sourceTree = "<group>";
@@ -291,10 +300,13 @@
 				1AEE7B792569DCBA0066DE0D /* MainView.swift in Sources */,
 				1A23933B256CA9150033FF08 /* LoginView.swift in Sources */,
 				1A7F0DA4256CDA3A00A405A0 /* GlobalData.swift in Sources */,
+				1A758173256DD127001EA9E3 /* RegisterEmailView.swift in Sources */,
+				1A758178256DD39C001EA9E3 /* RegisterPasswordView.swift in Sources */,
 				1AEE7B7E2569EA2A0066DE0D /* CapsuleListView.swift in Sources */,
 				1A26D41F256AB79200955D36 /* AddTypeSheetView.swift in Sources */,
 				1A7F0D9F256CC28900A405A0 /* AuthView.swift in Sources */,
 				1A239336256C86C60033FF08 /* ImagePicker.swift in Sources */,
+				1A75816E256D7D43001EA9E3 /* SettingsView.swift in Sources */,
 				1AEE7B83256A004D0066DE0D /* CapsuleView.swift in Sources */,
 				1AEE7B3C2569B3FA0066DE0D /* timecapsuleApp.swift in Sources */,
 			);

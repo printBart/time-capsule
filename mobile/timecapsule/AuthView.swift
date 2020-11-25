@@ -15,6 +15,7 @@ struct AuthView: View {
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all).frame(maxWidth: UIScreen.main.bounds.width)
             VStack{
+                Spacer()
                 NavigationLink(destination: LoginView()){
                     HStack{
                         Image(systemName: "envelope").foregroundColor(.gray).font(Font.system(size: 20, weight: .medium))
@@ -31,6 +32,10 @@ struct AuthView: View {
                         Spacer()
                     }.padding().frame(width: UIScreen.main.bounds.width-20).background(Color.white).cornerRadius(25)
                 }.buttonStyle(PlainButtonStyle())
+                Spacer()
+                NavigationLink(destination: RegisterEmailView()){
+                    Text("Create a New Account").bold()
+                }
             }
         }
     }

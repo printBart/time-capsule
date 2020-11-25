@@ -18,13 +18,13 @@ struct CapsuleListView: View {
             VStack{
                 HStack{
                     Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
-                        Image(systemName: "house.fill").font(.system(size: 25))
+                        Image(systemName: "chevron.left").font(.system(size: 25))
                     }
                     Spacer()
                     Text("My Capsules").foregroundColor(.white).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Spacer()
                     Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
-                        Image(systemName: "plus.square").font(.system(size: 28))
+                        Image(systemName: "plus.square").font(.system(size: 25))
                     }
                 }.padding()
                 ScrollView(showsIndicators: false){

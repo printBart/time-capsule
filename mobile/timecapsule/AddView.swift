@@ -10,6 +10,7 @@ import SwiftUI
 struct AddView: View {
     //photo library
     @State private var displayPhotoLibrary = false
+    @State private var displaySettings = false
     @State private var inputImage: UIImage?
     @State var image: Image?
 
@@ -60,9 +61,14 @@ struct AddView: View {
                     HStack(){
                         NavigationLink(
                             destination: CapsuleListView(), isActive: $navigateToMyCapsules){
-                                Text("My Capsules").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                Text("My Capsules").fontWeight(.bold)
                                     .padding().background(Color(red: 18/255, green: 33/255, blue: 60/255, opacity: 0.9)).foregroundColor(.white).cornerRadius(25)
                             }.buttonStyle(PlainButtonStyle())
+                        Button(action: {self.displaySettings.toggle()}){
+                            Image(systemName: "ellipsis.circle.fill").font(.system(size: 35)).foregroundColor(Color(red: 18/255, green: 33/255, blue: 60/255, opacity: 0.9))
+                        }.sheet(isPresented: $displaySettings){
+                            SettingsView()
+                        }
                     }
                     Spacer()
                 }
