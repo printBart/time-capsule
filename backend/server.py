@@ -11,11 +11,20 @@ CORS(app)
 #Configure database
 conn = psycopg2.connect(dbname="timecapsule", port="5432")
 
-#test API
-@app.route("/api/test", methods=['POST'])
-def test():
+#register API
+@app.route("/api/register", methods=['POST'])
+def register():
 	try:
-		print("test")
+		userId = request.get_json()['userId']
+		email = request.get_json()['email']
+		password = request.get_json()['password']
+		
+		cur = conn.cursor()
+		cur.execute("INSERT INTO Users(userId, email, password) VALUES (%s, %s, %s)", (userId, email, password))
+
+		conn.commit()
+		cur.close()
+
 		return {"value": True}
 	except:
 		raise Exception('Error test')
